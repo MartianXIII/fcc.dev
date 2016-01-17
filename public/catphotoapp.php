@@ -48,6 +48,7 @@
       <li>other cats</li>
     </ol>
     <form  action="/submit-cat-photo">
+      <button type="submit">Submit</button>
       <input type="text" placeholder="cat photo URL">
     </form>
   </body>
