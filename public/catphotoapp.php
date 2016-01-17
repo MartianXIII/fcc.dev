@@ -65,5 +65,6 @@
     <!--Add Required field in Input 37-->
     <!--Create a set of Radio Buttons 38-->
     <!--Create a set of Checkboxes 39-->
+    <!--Check Radio Buttons & checkboxes by default 40-->
   </body>
 </html>
