@@ -34,7 +34,9 @@
   <body>
     <h2 class="red-text">CatPhotoApp</h2>
     <p>Click her here for <a href="#">cat photos</a>.</p>
-    <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back"src="https://bit.ly/fcc-relaxing-cat"/></a>
+    <a href="#"><img class="smaller-image thick-green-border"
+       alt="A cute orange cat lying on its back"
+       src="https://bit.ly/fcc-relaxing-cat"/></a>
     <p>Things cats Love:</p>
     <ul>
       <li>cat nip</li>
