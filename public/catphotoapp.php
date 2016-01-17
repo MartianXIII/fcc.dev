@@ -50,9 +50,9 @@
       <li>other cats</li>
     </ol>
     <form  action="/submit-cat-photo">
-      <label><input type="radio" name="indoor-outdoor"/>Indoor</label>
+      <label><input type="radio" name="indoor-outdoor" checked/>Indoor</label>
       <label><input type="radio" name="indoor-outdoor"/>Outdoor</label>
-      <label><input type="checkbox" name="personality">Loving</label>
+      <label><input type="checkbox" name="personality" checked>Loving</label>
       <label><input type="checkbox" name="personality">Lazy</label>
       <label><input type="checkbox" name="personality">Energetic</label>
       <input type="text" placeholder="cat photo URL" required>
@@ -66,5 +66,6 @@
     <!--Create a set of Radio Buttons 38-->
     <!--Create a set of Checkboxes 39-->
     <!--Check Radio Buttons & checkboxes by default 40-->
+    <!--Nest many Elements within a single div Element 41-->
   </body>
 </html>
