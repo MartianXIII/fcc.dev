@@ -35,5 +35,20 @@
     <h2 class="red-text">CatPhotoApp</h2>
     <p>Click her here for <a href="#">cat photos</a>.</p>
     <a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back"src="https://bit.ly/fcc-relaxing-cat"/></a>
+    <p>Things cats Love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats dislike:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+    <form  action="/submit-cat-photo">
+      <input type="text" placeholder="cat photo URL">
+    </form>
   </body>
 </html>
