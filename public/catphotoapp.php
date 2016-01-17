@@ -49,7 +49,11 @@
     </ol>
     <form  action="/submit-cat-photo">
       <button type="submit">Submit</button>
-      <input type="text" placeholder="cat photo URL">
+      <input type="text" placeholder="cat photo URL" required>
     </form>
+
+
+
+    <!--Add button(Submit)& text submit -->
   </body>
 </html>
