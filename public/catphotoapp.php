@@ -48,6 +48,8 @@
       <li>other cats</li>
     </ol>
     <form  action="/submit-cat-photo">
+      <label><input type="radio" name="indoor-outdoor"/>Indoor</label>
+      <label><input type="radio" name="indoor-outdoor"/>Outdoor</label>
       <button type="submit">Submit</button>
       <input type="text" placeholder="cat photo URL" required>
     </form>
@@ -55,7 +57,8 @@
 
 
     <!--Add button(Submit)& text submit 36-->
-    <!--Add Required field in Input  37-->
-    <!--Create a set of Radio Buttons  38-->
+    <!--Add Required field in Input 37-->
+    <!--Create a set of Radio Buttons 38-->
+    <!--Create a set of Checkboxes 39-->
   </body>
 </html>
