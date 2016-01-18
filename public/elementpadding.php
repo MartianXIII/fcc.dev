@@ -22,15 +22,17 @@
       }
 
       .red-box {
-        background-color: red;
-        padding: 20px;
-        margin: -15px;
+        background-color:red;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
       }
 
       .green-box {
         background-color: green;
-        padding: 20px;
-        margin: -15px;
+        padding-left: 40px;
+        padding-right: 20px;
       }
 
     </style>
@@ -45,5 +47,6 @@
     <!--Adjusting the Padding of an Element 45-->
     <!--Adjusting the Margin of an Element 46-->
     <!--Add a Negative Margin to an Element 47-->
+    <!--Add Different Padding to Each side of an Element 48-->
   </body>
 </html>
