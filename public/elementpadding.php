@@ -31,8 +31,10 @@
 
       .green-box {
         background-color: green;
-        padding-left: 40px;
+        padding-top: 40px;
         padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
       }
 
     </style>
