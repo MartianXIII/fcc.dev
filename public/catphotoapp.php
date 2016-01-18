@@ -28,6 +28,10 @@
   .smaller-image {
     width: 100px;
   }
+
+  .gray-background {
+    background-color: gray;
+  }
 </style>
 
   </head>
@@ -37,6 +41,8 @@
     <a href="#"><img class="smaller-image thick-green-border"
        alt="A cute orange cat lying on its back"
        src="https://bit.ly/fcc-relaxing-cat"/></a>
+
+  <div class="gray-background">     
     <p>Things cats Love:</p>
     <ul>
       <li>cat nip</li>
@@ -49,6 +55,7 @@
       <li>thunder</li>
       <li>other cats</li>
     </ol>
+  </div>
     <form  action="/submit-cat-photo">
       <label><input type="radio" name="indoor-outdoor" checked/>Indoor</label>
       <label><input type="radio" name="indoor-outdoor"/>Outdoor</label>
