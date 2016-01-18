@@ -23,18 +23,18 @@
 
       .red-box {
         background-color:red;
-        padding-top: 40px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
       }
 
       .green-box {
         background-color: green;
-        padding-top: 40px;
-        padding-right: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
       }
 
     </style>
