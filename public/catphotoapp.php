@@ -42,7 +42,7 @@
        alt="A cute orange cat lying on its back"
        src="https://bit.ly/fcc-relaxing-cat"/></a>
 
-  <div class="gray-background">     
+  <div class="gray-background">
     <p>Things cats Love:</p>
     <ul>
       <li>cat nip</li>
@@ -56,7 +56,7 @@
       <li>other cats</li>
     </ol>
   </div>
-    <form  action="/submit-cat-photo">
+    <form id="cat-photo-form" action="/submit-cat-photo">
       <label><input type="radio" name="indoor-outdoor" checked/>Indoor</label>
       <label><input type="radio" name="indoor-outdoor"/>Outdoor</label>
       <label><input type="checkbox" name="personality" checked>Loving</label>
@@ -75,6 +75,7 @@
     <!--Check Radio Buttons & checkboxes by default 40-->
     <!--Nest many Elements within a single div Element 41-->
     <!--Give a Background Color to a Div Element 42-->
+    <!--Set the ID of an Element 43-->
 
   </body>
 </html>
