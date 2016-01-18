@@ -23,18 +23,12 @@
 
       .red-box {
         background-color:red;
-        margin-top: 40px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        padding: 20px 40px 20px 40px;
       }
 
       .green-box {
         background-color: green;
-        margin-top: 40px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        margin-left: 40px;
+        padding: 40px 20px 20px 40px;
       }
 
     </style>
@@ -52,5 +46,6 @@
     <!--Add Different Padding to Each side of an Element 48-->
     <!--Add Different Margins to each side of an Element 49-->
     <!--Use Clockwise Notation to specify the padding of an Element 50-->
+
   </body>
 </html>
