@@ -28,9 +28,9 @@
 
       .green-box {
         background-color: green;
-        padding: 10px;
+        padding: 20px;
       }
-      
+
     </style>
   </head>
   <body>
