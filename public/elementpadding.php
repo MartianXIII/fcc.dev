@@ -23,12 +23,12 @@
 
       .red-box {
         background-color:red;
-        padding: 20px 40px 20px 40px;
+        marigin: 20px 40px 20px 40px;
       }
 
       .green-box {
         background-color: green;
-        padding: 40px 20px 20px 40px;
+        margin: 40px 20px 20px 40px;
       }
 
     </style>
@@ -40,12 +40,14 @@
         <h5 class="box red-box">padding</h5>
         <h5 class="box green-box">padding</h5>
       </div>
+      <!--    console.var_dump 4 wut.  -->
     <!--Adjusting the Padding of an Element 45-->
     <!--Adjusting the Margin of an Element 46-->
     <!--Add a Negative Margin to an Element 47-->
     <!--Add Different Padding to Each side of an Element 48-->
     <!--Add Different Margins to each side of an Element 49-->
     <!--Use Clockwise Notation to specify the padding of an Element 50-->
+    <!--Use Clockwise Notation to specify the margin of an Element 51-->
 
   </body>
 </html>
