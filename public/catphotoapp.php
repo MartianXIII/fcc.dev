@@ -32,6 +32,11 @@
   .gray-background {
     background-color: gray;
   }
+
+  #cat-photo-form {
+    background-color: green;
+  }
+  
 </style>
 
   </head>
