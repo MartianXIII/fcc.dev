@@ -67,15 +67,32 @@
       // a -= 6;
       // b -= 15;
       // c -= 1;
-      var a = 5;
-      var b = 12;
-      var c = 4.6;
+      // var a = 5;
+      // var b = 12;
+      // var c = 4.6;
+      //
+      // a *= 5;
+      // b *= 3;
+      // c *= 10;
 
-      a *= 5;
-      b *= 3;
-      c *= 10;
+      // var a = 48;
+      // var b = 108;
+      // var c = 33;
+      //
+      // a /= 12;
+      // b /= 4;
+      // c /= 11;
 
+      function convert(celsius) {
+        var fahrenheit = celsius * 9/5 + 32;
 
+        if( typeof fahrenheit !== 'underfined' ) {
+          return fahrenheit;
+        } else {
+          return 'fahrenheit not defined';
+        }
+      }
+      convert(30);
 
 
 
@@ -101,6 +118,7 @@
     <!--Assignment with Minus Equals 18-->
     <!--Assignment with Times Equals 19-->
     <!--Assignment with Divided by Equals 20-->
+    <!--Convert Celsius to Fahrenheit function 21-->
 
   </body>
 </html>
