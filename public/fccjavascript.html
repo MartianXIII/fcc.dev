@@ -264,7 +264,18 @@
           output += " oopsGlobal: " + oopsGlobal;
         }
         console.log(output);
-}
+      }
+
+      //50 Local Scope
+      function myFunction() {
+        'use strict';
+        var myVar;
+
+        console.log(myVar);
+      }
+      myFunction();
+
+
 
 
     </script>
@@ -319,6 +330,7 @@
     <!--Write Reusable Javascript with Functions 47-->
     <!--Passing Values to Functions with Arguments 48-->
     <!--Global Scopre and Functions 49-->
+    <!--Local Scope and Functions 50-->
 
   </body>
 </html>
