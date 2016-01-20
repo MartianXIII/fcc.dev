@@ -212,6 +212,17 @@
       var myArray = [["John", 23], ["dog", 3]];
       var removedFromMyArray = myArray.shift(["John", 23]);
 
+      // 45
+      var ourArray = ["Stimpson", "J", "cat"];
+      ourArray.shift(); // ourArray now equals ["J", "cat"]
+      ourArray.unshift("Happy");
+      // ourArray now equals ["Happy", "J", "cat"]
+
+      var myArray = [["John", 23], ["dog", 3]];
+      myArray.shift();
+      myArray.unshift(["Paul", 35]);
+
+
 
     </script>
 
@@ -260,6 +271,7 @@
     <!--Manipulate Arrays with push 42-->
     <!--Manipulate Arrays with pop 43-->
     <!--Manipulate Arrays with shift 44-->
+    <!--Manipulate Arrays with unshift 45-->
 
 
   </body>
