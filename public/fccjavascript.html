@@ -237,211 +237,213 @@
       // myFunction();
 
       // 48 Functions with Arguments
-      function ourFunction(a, b) {
-        console.log(a - b);
-      }
-      ourFunction(10, 5);
+    //   function ourFunction(a, b) {
+    //     console.log(a - b);
+    //   }
+    //   ourFunction(10, 5);
+    //
+    //   function myFunction(c, d) {
+    //     console.log(c + d);
+    //   }
+    //   myFunction(1, 2);
+    //   myFunction(7, 9);
+    //
+    //   // 49 Global scope functions
+    //   var myGlobal = 10;
+    //
+    //   function fun1() {
+    //     oopsGlobal = 5;
+    //   }
+    //
+    //   function fun2() {
+    //     var output = "";
+    //     if (typeof myGlobal != "undefined") {
+    //       output += "myGlobal: " + myGlobal;
+    //     }
+    //     if (typeof oopsGlobal != "undefined") {
+    //       output += " oopsGlobal: " + oopsGlobal;
+    //     }
+    //     console.log(output);
+    //   }
+    //
+    //   //50 Local Scope
+    //   function myFunction() {
+    //     'use strict';
+    //     var myVar;
+    //
+    //     console.log(myVar);
+    //   }
+    //   myFunction();
+    //
+    //   //51
+    //   var outerWear = "T-Shirt";
+    //
+    //   function myFunction() {
+    //     var outerWear = "sweater";
+    //     return outerWear;
+    //   }
+    //   myFunction();
+    //
+    //   // 52
+    //   function minusSeven(num) {
+    //     return num - 7;
+    //   }
+    //
+    //   function minusSeven(num) {
+    //     return num - 7;
+    //   }
+    //
+    //   function timesFive(num) {
+    //     return num * 5;
+    //   }
+    //   timesFive(5);
+    //   timesFive(2);
+    //   timesFive(0);
+    //
+    //   // 53
+    //   var processed = 0;
+    //
+    //   function process(num) {
+    //     return (num + 3) / 5;
+    //   }
+    //   processed = process(7);
+    //
+    //   var testArr = [1,2,3,4,5];
+    //
+    //   function queue(arr, item) {
+    //     arr.push(item);
+    //     return arr.shift();
+    //
+    //   console.log("Before: " + JSON.stringify(testArr));
+    //   console.log(queue(testArr, 10));
+    //   console.log("After: " + JSON.stringify(testArr));
+    //   }
+    //   // 54
+    //   function welcomeToBooleans() {
+    //     return true;
+    //    }
+    //   //  else {
+    //   //   return false;
+    //   // }
+    //
+    //   // 55
+    //   function ourFunction(isItTrue) {
+    //     if (isItTrue) {
+    //       return "Yes, it's true";
+    //     }
+    //     return "No, it's false";
+    //   }
+    //
+    //   function myFunction(wasThatTrue) {
+    //     if(wasThatTrue) {
+    //       return "That was true";
+    //     }
+    //     return "That was false";
+    //   }
+    //   myFunction(true);
+    //
+    //   //57
+    //   function myTest(val) {
+    //     if (val == 12) {
+    //       return "Equal";
+    //     }
+    //     return "Not Equal";
+    //   }
+    //   myTest(10);
+    //   myTest(12);
+    //   myTest("12");
+    //
+    //   // 58
+    //   function myTest(val) {
+    //     if (val === 7) {
+    //       return "Equal";
+    //     }
+    //     return "Not Equal";
+    //   }
+    //   myTest(10);
+    //   myTest(7);
+    //   myTest("7");
+    //
+    //   // 59
+    //   function myTest(val) {
+    //     if (val != 99) {
+    //       return "Not Equal";
+    //     }
+    //     return "Equal";
+    //   }
+    //   myTest(10);
+    //   myTest(99);
+    //
+    //   // 60
+    // function myTest(val) {
+    //   if (val !== 17) {
+    //     return "Not Equal";
+    //   }
+    //   return "Equal";
+    // }
+    // myTest(17);
+    //
+    // // 61
+    // function myTest(val) {
+    //   if (val > 100) {
+    //     return "Over 100";
+    //   }
+    //   if (val > 10) {
+    //     return "Over 10";
+    //   }
+    //   return "10 or Under";
+    // }
+    // myTest(10);
+    //
+    // // 62
+    // function myTest(val) {
+    //   if (val >= 20) {
+    //     return "20 or Over";
+    //   }
+    //   if (val >= 10) {
+    //     return "10 or Over";
+    //   }
+    //   return "9 or Under";
+    // }
+    // myTest(10);
+    // myTest(9);
+    // myTest(19);
+    // myTest(100);
+    // myTest(101);
+    //
+    // // 63
+    // function myTest(val) {
+    //   if (val < 25) {
+    //     return "Under 25";
+    //   }
+    //   if (val < 55) {
+    //     return "Under 55";
+    //   }
+    //   return "55 or Over";
+    // }
+    // myTest(10);
+    // myTest(25);
+    // myTest(54);
+    // myTest(99);
+    //
+    // // 64
+    // function myTest(val) {
+    //   if (val <= 12) {
+    //     return "Smaller Than or Equal to 12";
+    //   }
+    //   if (val <= 24) {
+    //     return "Smaller Than or Equal to 24";
+    //   }
+    //   return "25 or More";
+    // }
+    // myTest(10);
+    // myTest(0);
+    // myTest(23);
+    // myTest(24);
+    // myTest(25);
+    // myTest(55);
 
-      function myFunction(c, d) {
-        console.log(c + d);
-      }
-      myFunction(1, 2);
-      myFunction(7, 9);
-
-      // 49 Global scope functions
-      var myGlobal = 10;
-
-      function fun1() {
-        oopsGlobal = 5;
-      }
-
-      function fun2() {
-        var output = "";
-        if (typeof myGlobal != "undefined") {
-          output += "myGlobal: " + myGlobal;
-        }
-        if (typeof oopsGlobal != "undefined") {
-          output += " oopsGlobal: " + oopsGlobal;
-        }
-        console.log(output);
-      }
-
-      //50 Local Scope
-      function myFunction() {
-        'use strict';
-        var myVar;
-
-        console.log(myVar);
-      }
-      myFunction();
-
-      //51
-      var outerWear = "T-Shirt";
-
-      function myFunction() {
-        var outerWear = "sweater";
-        return outerWear;
-      }
-      myFunction();
-
-      // 52
-      function minusSeven(num) {
-        return num - 7;
-      }
-
-      function minusSeven(num) {
-        return num - 7;
-      }
-
-      function timesFive(num) {
-        return num * 5;
-      }
-      timesFive(5);
-      timesFive(2);
-      timesFive(0);
-
-      // 53
-      var processed = 0;
-
-      function process(num) {
-        return (num + 3) / 5;
-      }
-      processed = process(7);
-
-      var testArr = [1,2,3,4,5];
-
-      function queue(arr, item) {
-        arr.push(item);
-        return arr.shift();
-
-      console.log("Before: " + JSON.stringify(testArr));
-      console.log(queue(testArr, 10));
-      console.log("After: " + JSON.stringify(testArr));
-      }
-      // 54
-      function welcomeToBooleans() {
-        return true;
-       }
-      //  else {
-      //   return false;
-      // }
-
-      // 55
-      function ourFunction(isItTrue) {
-        if (isItTrue) {
-          return "Yes, it's true";
-        }
-        return "No, it's false";
-      }
-
-      function myFunction(wasThatTrue) {
-        if(wasThatTrue) {
-          return "That was true";
-        }
-        return "That was false";
-      }
-      myFunction(true);
-
-      //57
-      function myTest(val) {
-        if (val == 12) {
-          return "Equal";
-        }
-        return "Not Equal";
-      }
-      myTest(10);
-      myTest(12);
-      myTest("12");
-
-      // 58
-      function myTest(val) {
-        if (val === 7) {
-          return "Equal";
-        }
-        return "Not Equal";
-      }
-      myTest(10);
-      myTest(7);
-      myTest("7");
-
-      // 59
-      function myTest(val) {
-        if (val != 99) {
-          return "Not Equal";
-        }
-        return "Equal";
-      }
-      myTest(10);
-      myTest(99);
-
-      // 60
-    function myTest(val) {
-      if (val !== 17) {
-        return "Not Equal";
-      }
-      return "Equal";
-    }
-    myTest(17);
-
-    // 61
-    function myTest(val) {
-      if (val > 100) {
-        return "Over 100";
-      }
-      if (val > 10) {
-        return "Over 10";
-      }
-      return "10 or Under";
-    }
-    myTest(10);
-
-    // 62
-    function myTest(val) {
-      if (val >= 20) {
-        return "20 or Over";
-      }
-      if (val >= 10) {
-        return "10 or Over";
-      }
-      return "9 or Under";
-    }
-    myTest(10);
-    myTest(9);
-    myTest(19);
-    myTest(100);
-    myTest(101);
-
-    // 63
-    function myTest(val) {
-      if (val < 25) {
-        return "Under 25";
-      }
-      if (val < 55) {
-        return "Under 55";
-      }
-      return "55 or Over";
-    }
-    myTest(10);
-    myTest(25);
-    myTest(54);
-    myTest(99);
-
-    // 64
-    function myTest(val) {
-      if (val <= 12) {
-        return "Smaller Than or Equal to 12";
-      }
-      if (val <= 24) {
-        return "Smaller Than or Equal to 24";
-      }
-      return "25 or More";
-    }
-    myTest(10);
-    myTest(0);
-    myTest(23);
-    myTest(24);
-    myTest(25);
-    myTest(55);
+    
 
 
     </script>
