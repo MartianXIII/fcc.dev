@@ -344,7 +344,7 @@
 
       //57
       function myTest(val) {
-        if (val == 12) { 
+        if (val == 12) {
           return "Equal";
         }
         return "Not Equal";
@@ -352,6 +352,17 @@
       myTest(10);
       myTest(12);
       myTest("12");
+
+      // 58
+      function myTest(val) {
+        if (val === 7) {
+          return "Equal";
+        }
+        return "Not Equal";
+      }
+      myTest(10);
+      myTest(7);
+      myTest("7");
 
 
     </script>
@@ -414,7 +425,8 @@
     <!--Understanding Boolean Values 55-->
     <!--Using Conditional Logic with If Statements 56-->
     <!--Comparison with the Equality Operator 57-->
-    <!--  -->
+    <!--Comparison with the Strict Equality Operator 58-->
+    <!-- -->
 
   </body>
 </html>
