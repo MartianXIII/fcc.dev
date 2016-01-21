@@ -308,6 +308,17 @@
       }
       processed = process(7);
 
+      var testArr = [1,2,3,4,5];
+
+      function queue(arr, item) {
+        arr.push(item);
+        return arr.shift();
+
+      console.log("Before: " + JSON.stringify(testArr));
+      console.log(queue(testArr, 10));
+      console.log("After: " + JSON.stringify(testArr));
+      }
+
 
     </script>
 
@@ -365,6 +376,7 @@
     <!--Global vs Local Scope in Functions 51-->
     <!--Return a Value from a Function with Return 52-->
     <!--Assignment with a Returned Value 53-->
+    <!--Stand in Line 54-->
 
 
   </body>
