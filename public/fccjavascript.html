@@ -527,6 +527,38 @@
       myTest(14);
       myTest(20);
 
+      // 71 GOLF!!!
+      function golfScore(par, strokes) {
+        if(strokes == 1) {
+          return "Hole-in-one!";
+        } else if (strokes <= par - 2) {
+          return "Eagle";
+        } else if (strokes == par - 1) {
+          return "Birdie";
+        } else if (strokes == par) {
+          return "Par";
+        } else if (strokes == par + 1) {
+          return "Bogey";
+        } else if (strokes == par + 2) {
+          return "Double Bogey";
+        } else if (strokes >= par + 3) {
+          return "Go Home!";
+        } else  return "Change Me";
+      }
+
+      golfScore(5, 4);
+      golfScore(4, 2);
+      golfScore(5, 2);
+      golfScore(4, 3);
+      golfScore(4, 4);
+      golfScore(1, 1);
+      golfScore(5, 5);
+      golfScore(4, 5);
+      golfScore(4, 6);
+      golfScore(4, 7);
+      golfScore(5, 9);
+
+
 
 
     </script>
