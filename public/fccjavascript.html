@@ -582,6 +582,25 @@
       myTest(3);
       myTest(4);
 
+      function myTest(val) {
+        var answer = "";
+        switch(val) {
+          case val = "a":
+            answer = "apple";
+            break;
+          case val = "b":
+            answer = "bird";
+            break;
+          case val = "c":
+            answer = "cat";
+            break;
+          default:
+            answer = "stuff";
+        }
+        return answer;
+      }
+      myTest(4);
+
     </script>
 
     <!--Comments in JS 01-->
