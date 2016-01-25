@@ -36,11 +36,13 @@
   #cat-photo-form {
     background-color: green;
   }
-  
+
 </style>
 
   </head>
   <body>
+    <div class="container-fluid">
+
     <h2 class="red-text">CatPhotoApp</h2>
     <p>Click her here for <a href="#">cat photos</a>.</p>
     <a href="#"><img class="smaller-image thick-green-border"
@@ -70,6 +72,7 @@
       <input type="text" placeholder="cat photo URL" required>
       <button type="submit">Submit</button>
     </form>
+  </div>
 
 
 
@@ -82,6 +85,8 @@
     <!--Give a Background Color to a Div Element 42-->
     <!--Set the ID of an Element 43-->
     <!--Using an ID ATTRIBUTE to style an Element 44-->
+
+    <!--Use Responsive Design with Bootstrap Fluid Containers 01-->
 
   </body>
 </html>
