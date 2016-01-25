@@ -43,12 +43,13 @@
   <body>
     <div class="container-fluid">
 
-    <h2 class="red-text">CatPhotoApp</h2>
+    <h2 class="red-text text-center">CatPhotoApp</h2>
     <p>Click her here for <a href="#">cat photos</a>.</p>
     <a href="#"><img class="smaller-image thick-green-border"
        alt="A cute orange cat lying on its back"
        src="https://bit.ly/fcc-relaxing-cat"/></a>
        <img class="img-responsive"src="http://bit.ly/fcc-running-cats" alt="">
+       <button class="btn">Like</button>
 
   <div class="gray-background">
     <p>Things cats Love:</p>
@@ -90,6 +91,8 @@
     <!--     BB OO OO TT SS TT RR AA PP .. .. MM EE HH       -->
     <!--Use Responsive Design with Bootstrap Fluid Containers 01-->
     <!--Make Images Mobile Responsive 02-->
+    <!--Center Text with Bootstrap 03-->
+    <!--Create a Bootstrap Button 04-->
 
   </body>
 </html>
