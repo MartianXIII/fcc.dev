@@ -48,6 +48,7 @@
     <a href="#"><img class="smaller-image thick-green-border"
        alt="A cute orange cat lying on its back"
        src="https://bit.ly/fcc-relaxing-cat"/></a>
+       <img class="img-responsive"src="http://bit.ly/fcc-running-cats" alt="">
 
   <div class="gray-background">
     <p>Things cats Love:</p>
@@ -86,7 +87,9 @@
     <!--Set the ID of an Element 43-->
     <!--Using an ID ATTRIBUTE to style an Element 44-->
 
+    <!--     BB OO OO TT SS TT RR AA PP .. .. MM EE HH       -->
     <!--Use Responsive Design with Bootstrap Fluid Containers 01-->
+    <!--Make Images Mobile Responsive 02-->
 
   </body>
 </html>
