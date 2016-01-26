@@ -656,6 +656,7 @@
     }
     myTest(1);
 
+    // 75
     function myTest(val) {
       var answer = "";
       switch (val) {
@@ -696,6 +697,15 @@
     // }
     // myTest(7);
 
+    // 76
+    function isLess(a, b) {
+      return a < b;
+    }
+    isLess(10, 15);
+
+
+
+    // 77
     function abTest(a, b) {
       // Only change code below this line
       if (a + b === 0) {
@@ -704,7 +714,59 @@
       return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
     }
     abTest(2, 2);
-    
+
+    // 78
+    function cc(card) {
+      switch(card){
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          count++;
+          break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+          count--;
+          break;
+      }
+      if (count > 0){
+        return count + " Bet";
+      } else {
+        return count + " Hold";
+      }
+    }
+
+    // 79
+    function cc(card) {
+      switch(card){
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+          count++;
+          break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+          count--;
+          break;
+      }
+      if (count > 0){
+        return count + " Bet";
+      } else {
+        return count + " Hold";
+      }
+    }
+
+
+
   </script>
 
   <!--console.var_dump 4 wat. -->
@@ -786,7 +848,7 @@
   <!--Replacing If Else Chains with Switch 75-->
   <!--Returning Boolean Values from Functions 76-->
   <!--Return Early Pattern for Functions 77-->
-  <!-- 78-->
+  <!--Counting Cards 78-->
 
 
 </body>
