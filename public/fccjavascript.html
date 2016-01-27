@@ -863,7 +863,24 @@
     };
     delete myDog.tails;
 
+    // 87
+    function phoneticLookup(val) {
+      var result = "";
 
+      var lookup = {
+          "alpha" : "Adams",
+          "bravo" : "Boston",
+          "charlie" : "Chicago",
+          "delta" : "Denver",
+          "echo" : "Easy",
+          "foxtrot" : "Frank"
+      };
+      result = lookup[val];
+
+      return result;
+    }
+
+    phoneticLookup("charlie");
 
 
   </script>
@@ -955,6 +972,8 @@
   <!--Using Object Properties 84-->
   <!--Add New Properties to a Javascript Object 85-->
   <!--Delete Properties from a Javascript Object 86-->
+  <!--Using Objects for Lookups 87-->
+
 </body>
 
 </html>
