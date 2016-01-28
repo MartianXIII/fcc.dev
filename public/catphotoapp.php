@@ -15,6 +15,7 @@
         border-style: solid;
         border-radius: 50%;
       }
+
     </style>
 
     <div class="container-fluid">
@@ -51,8 +52,14 @@
         <li>other cats</li>
       </ol>
       <form action="/submit-cat-photo">
-        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+        <div class="row">
+          <div class="col-xs-6">
+            <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+          </div>
+          <div class="col-xs-6">
+            <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+          </div>
+        </div>
         <label><input type="checkbox" name="personality"> Loving</label>
         <label><input type="checkbox" name="personality"> Lazy</label>
         <label><input type="checkbox" name="personality"> Crazy</label>
@@ -60,6 +67,7 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+
 
 
 
@@ -91,6 +99,7 @@
     <!--Add Font Awesome Icons to our Buttons 13-->
     <!--Add Font Awesome Icons to ALL of our Buttons 14-->
     <!--Use Spans for Inline Elements 15-->
+    <!--Responsively Style Radio Buttons 16-->
 
   </body>
 </html>
