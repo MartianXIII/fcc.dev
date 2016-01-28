@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Cat Photo App</title>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <style>
       h2 {
         font-family: Lobster, Monospace;
@@ -18,10 +19,14 @@
     </style>
 
     <div class="container-fluid">
-      <h2 class="text-primary text-center">CatPhotoApp</h2>
-
-      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
-
+      <div class="row">
+        <div class="col-xs-8">
+          <h2 class="text-primary text-center">CatPhotoApp</h2>
+        </div>
+        <div class="col-xs-4">
+          <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+        </div>
+      </div>
       <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
       <div class="row">
         <div class="col-xs-4">
@@ -59,6 +64,7 @@
 
 
 
+
     <!--Add button(Submit)& text submit 36-->
     <!--Add Required field in Input 37-->
     <!--Create a set of Radio Buttons 38-->
@@ -82,7 +88,8 @@
     <!--Use the Bootstrap Grid to Put Elements Side by Side 09-->
     <!--Ditch Custom CSS for Bootstrap 10-->
     <!--Use Spans for Inline Elements 11-->
-    
+    <!--Create a Custom Heading 12-->
+
 
   </body>
 </html>
