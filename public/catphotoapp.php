@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>Cat Photo App</title>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <style>
       h2 {
         font-family: Lobster, Monospace;
@@ -34,10 +32,10 @@
           <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
         </div>
         <div class="col-xs-4">
-          <button class="btn btn-block btn-info">Info</button>
+          <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
         </div>
         <div class="col-xs-4">
-          <button class="btn btn-block btn-danger">Delete</button>
+          <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
         </div>
       </div>
       <p>Things cats <span class="text-danger">love:</span></p>
