@@ -48,7 +48,7 @@
       <!--News ... etc 14-->
 
       <!--Jaquery Playhouse -->
-      <!--Learn how Script tags && Document Ready Work  01-->
+      <!--Learn how Script tags && Document Ready Work 14-->
 
   </body>
 </html>
