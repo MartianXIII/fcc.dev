@@ -33,13 +33,17 @@
   <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
 
   <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
-<div class="row">
-  <div class="col-xs-4">
-  <button class="btn btn-block btn-primary">Like</button>
-  <button class="btn btn-block btn-info">Info</button>
-  <button class="btn btn-block btn-danger">Delete</button>
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
   </div>
-</div>
   <p>Things cats love:</p>
   <ul>
     <li>cat nip</li>
@@ -66,6 +70,7 @@
 
 
 
+
     <!--Add button(Submit)& text submit 36-->
     <!--Add Required field in Input 37-->
     <!--Create a set of Radio Buttons 38-->
@@ -87,6 +92,7 @@
     <!--Call out Optional Actions with Button Info 07-->
     <!--Warn your Users of a Dangerous Action 08-->
     <!--Use the Bootstrap Grid to Put Elements side by side 09-->
+    <!--Ditch CUstom CSS for Bootstrap 10-->
 
   </body>
 </html>
