@@ -5,7 +5,6 @@
     <title>Cat Photo App</title>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <style>
-
       h2 {
         font-family: Lobster, Monospace;
       }
@@ -16,7 +15,6 @@
         border-style: solid;
         border-radius: 50%;
       }
-
     </style>
 
     <div class="container-fluid">
@@ -36,7 +34,7 @@
           <button class="btn btn-block btn-danger">Delete</button>
         </div>
       </div>
-      <p>Things cats love:</p>
+      <p>Things cats <span class="text-danger">love:</span></p>
       <ul>
         <li>cat nip</li>
         <li>laser pointers</li>
@@ -58,7 +56,6 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-
 
 
 
@@ -85,6 +82,7 @@
     <!--Use the Bootstrap Grid to Put Elements Side by Side 09-->
     <!--Ditch Custom CSS for Bootstrap 10-->
     <!--Use Spans for Inline Elements 11-->
+    
 
   </body>
 </html>
