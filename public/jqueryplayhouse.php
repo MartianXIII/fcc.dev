@@ -33,6 +33,7 @@
       <!--Jquery Playhouse  -->
 
       <!--Create a Bootstrap Headline 01-->
+      <!--House our page within a Bootstrap Container Fluid Div 02-->
 
 
       <!--Learn how Script tags && Document Ready Work  -->
