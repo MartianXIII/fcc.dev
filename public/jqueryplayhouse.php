@@ -8,9 +8,9 @@
 
     <!-- Only change code above this line. -->
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid"> -->
       <h3 class="text-primary text-center">jQuery Playground</h3>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xs-6">
           <h4>#left-well</h4>
           <div class="well" id="left-well">
@@ -28,10 +28,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
       <!--Jquery Playhouse  -->
+
+      <!--Create a Bootstrap Headline 01-->
+
+
       <!--Learn how Script tags && Document Ready Work  -->
-      
+
   </body>
 </html>
