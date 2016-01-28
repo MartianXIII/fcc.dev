@@ -60,13 +60,22 @@
             <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
           </div>
         </div>
-        <label><input type="checkbox" name="personality"> Loving</label>
-        <label><input type="checkbox" name="personality"> Lazy</label>
-        <label><input type="checkbox" name="personality"> Crazy</label>
+        <div class="row">
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality"> Loving</label>
+          </div>
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality"> Lazy</label>
+          </div>
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality"> Crazy</label>
+          </div>
+        </div>
         <input type="text" placeholder="cat photo URL" required>
         <button type="submit">Submit</button>
       </form>
     </div>
+
 
 
 
@@ -100,6 +109,7 @@
     <!--Add Font Awesome Icons to ALL of our Buttons 14-->
     <!--Use Spans for Inline Elements 15-->
     <!--Responsively Style Radio Buttons 16-->
+    <!--Responsively Style Checkboxes 17-->
 
   </body>
 </html>
