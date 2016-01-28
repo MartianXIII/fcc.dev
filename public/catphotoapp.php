@@ -112,6 +112,7 @@
     <!--Responsively Style Radio Buttons 16-->
     <!--Responsively Style Checkboxes 17-->
     <!--Style Text Inputs as Form Controls 18-->
+    <!--Line up Form Elements Responsively wih Bootstrap 19-->
 
   </body>
 </html>
