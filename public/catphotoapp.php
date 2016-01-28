@@ -72,7 +72,7 @@
       <label><input type="checkbox" name="personality">Lazy</label>
       <label><input type="checkbox" name="personality">Energetic</label>
       <input type="text" placeholder="cat photo URL" required>
-      <button class="btn-block" type="submit">Submit</button>
+      <button class="btn btn-block btn-primary" type="submit">Submit</button>
     </form>
   </div>
 
@@ -95,6 +95,7 @@
     <!--Center Text with Bootstrap 03-->
     <!--Create a Bootstrap Button 04-->
     <!--Create a Block Element Bootstrap Button 05-->
-    <!--  06-->
+    <!--Taste the Bootstrap Button color Rainbow 06-->
+
   </body>
 </html>
