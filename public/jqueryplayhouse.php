@@ -43,6 +43,9 @@
       <!--Add ID Attributes to Bootstrap Elements 09-->
       <!--Label Bootstrap Wells 10-->
       <!--Give Each Element a Unique ID 11-->
+      <!--Label Bootstrap Buttons 12-->
+      <!--Use Comments to Clarify Code 13-->
+      <!--News ... etc 14-->
 
       <!--Learn how Script tags && Document Ready Work  -->
 
