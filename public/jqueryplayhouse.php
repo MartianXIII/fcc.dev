@@ -39,6 +39,7 @@
       <!--Create Bootstrap wells 05-->
       <!--Add Elements within your Bootstrap Wells 06-->
       <!--Apply the default Bootstrap Button Style 07-->
+      <!--Create a Class to Target with Jquery Selectors 08-->
 
       <!--Learn how Script tags && Document Ready Work  -->
 
