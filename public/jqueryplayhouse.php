@@ -10,8 +10,8 @@
 
     <div class="container-fluid">
       <h3 class="text-primary text-center">jQuery Playground</h3>
-      <!-- <div class="row">
-        <div class="col-xs-6">
+      <div class="row">
+<!-- ?        <div class="col-xs-6">
           <h4>#left-well</h4>
           <div class="well" id="left-well">
             <button class="btn btn-default target" id="target1">#target1</button>
@@ -28,12 +28,14 @@
           </div>
         </div>
       </div> -->
+      </div>
     </div>
 
       <!--Jquery Playhouse  -->
 
       <!--Create a Bootstrap Headline 01-->
       <!--House our page within a Bootstrap Container Fluid Div 02-->
+      <!--Create a Bootstrap Row 03-->
 
 
       <!--Learn how Script tags && Document Ready Work  -->
