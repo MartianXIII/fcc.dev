@@ -74,6 +74,7 @@
       <input type="text" placeholder="cat photo URL" required>
       <button class="btn btn-block btn-primary" type="submit">Submit</button>
       <button text="info" class=" btn btn-info btn-block">Info</button>
+      <button class="btn btn-block btn-danger">Delete</button>
     </form>
   </div>
 
