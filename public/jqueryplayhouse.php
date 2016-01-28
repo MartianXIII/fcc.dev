@@ -30,7 +30,7 @@
       </div>
     </div>
 
-      <!--Jquery Playhouse  -->
+      <!--Jquery Playhouse BootStrap-->
 
       <!--Create a Bootstrap Headline 01-->
       <!--House our page within a Bootstrap Container Fluid Div 02-->
@@ -46,9 +46,9 @@
       <!--Label Bootstrap Buttons 12-->
       <!--Use Comments to Clarify Code 13-->
       <!--News ... etc 14-->
-      
 
-      <!--Learn how Script tags && Document Ready Work  -->
+      <!--Jaquery Playhouse -->
+      <!--Learn how Script tags && Document Ready Work  01-->
 
   </body>
 </html>
