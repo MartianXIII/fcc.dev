@@ -9,9 +9,9 @@
     <!-- Only change code above this line. -->
     <script>
       $(document).ready(function() {
-
+        $("button").addClass("animated bounce");
       });
-    </script>    
+    </script>
 
     <div class="container-fluid">
       <h3 class="text-primary text-center">jQuery Playground</h3>
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-      <!--Jquery Playhouse BootStrap-->
+      <!--JQuery Playhouse BootStrap-->
 
       <!--Create a Bootstrap Headline 01-->
       <!--House our page within a Bootstrap Container Fluid Div 02-->
@@ -52,8 +52,9 @@
       <!--Use Comments to Clarify Code 13-->
       <!--News ... etc 14-->
 
-      <!--Jaquery Playhouse -->
+      <!--JQuery Playhouse -->
       <!--Learn how Script tags && Document Ready Work 14-->
+      <!--Target HTML Elements with Selectors Using JQuery 15-->
 
   </body>
 </html>
