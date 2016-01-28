@@ -73,6 +73,7 @@
       <label><input type="checkbox" name="personality">Energetic</label>
       <input type="text" placeholder="cat photo URL" required>
       <button class="btn btn-block btn-primary" type="submit">Submit</button>
+      <button text="info" class=" btn btn-info btn-block">Info</button>
     </form>
   </div>
 
@@ -96,6 +97,7 @@
     <!--Create a Bootstrap Button 04-->
     <!--Create a Block Element Bootstrap Button 05-->
     <!--Taste the Bootstrap Button color Rainbow 06-->
+    <!--Call out Optional Actions with Button Info 07-->
 
   </body>
 </html>
