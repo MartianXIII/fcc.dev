@@ -1,72 +1,63 @@
-<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<style>
-  .red-text {
-    color: red;
-  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Photo App</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
 
-  h2 {
-    font-family: Lobster, Monospace;
-  }
+      h2 {
+        font-family: Lobster, Monospace;
+      }
 
-  p {
-    font-size: 16px;
-    font-family: Monospace;
-  }
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+      }
 
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
+    </style>
 
-  .smaller-image {
-    width: 100px;
-  }
-</style>
+    <div class="container-fluid">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
 
-<div class="container-fluid">
-  <h2 class="red-text text-center">CatPhotoApp</h2>
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
 
-  <p>Click here for <a href="#">cat photos</a>.</p>
-
-  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
-
-  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
-  <div class="row">
-    <div class="col-xs-4">
-      <button class="btn btn-block btn-primary">Like</button>
+      <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+      <div class="row">
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-primary">Like</button>
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-info">Info</button>
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-danger">Delete</button>
+        </div>
+      </div>
+      <p>Things cats love:</p>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <form action="/submit-cat-photo">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+        <label><input type="checkbox" name="personality"> Loving</label>
+        <label><input type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Crazy</label>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    <div class="col-xs-4">
-      <button class="btn btn-block btn-info">Info</button>
-    </div>
-    <div class="col-xs-4">
-      <button class="btn btn-block btn-danger">Delete</button>
-    </div>
-  </div>
-  <p>Things cats love:</p>
-  <ul>
-    <li>cat nip</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
-  </ul>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
-  </ol>
-  <form action="/submit-cat-photo">
-    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
-    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
-    <label><input type="checkbox" name="personality"> Loving</label>
-    <label><input type="checkbox" name="personality"> Lazy</label>
-    <label><input type="checkbox" name="personality"> Crazy</label>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
 
 
 
@@ -91,8 +82,9 @@
     <!--Taste the Bootstrap Button color Rainbow 06-->
     <!--Call out Optional Actions with Button Info 07-->
     <!--Warn your Users of a Dangerous Action 08-->
-    <!--Use the Bootstrap Grid to Put Elements side by side 09-->
-    <!--Ditch CUstom CSS for Bootstrap 10-->
+    <!--Use the Bootstrap Grid to Put Elements Side by Side 09-->
+    <!--Ditch Custom CSS for Bootstrap 10-->
+    <!--Use Spans for Inline Elements 11-->
 
   </body>
 </html>
