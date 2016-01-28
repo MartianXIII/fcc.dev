@@ -5,6 +5,7 @@
     <title>Cat Photo App</title>
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <style>
       h2 {
         font-family: Lobster, Monospace;
@@ -30,7 +31,7 @@
       <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
       <div class="row">
         <div class="col-xs-4">
-          <button class="btn btn-block btn-primary">Like</button>
+          <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
         </div>
         <div class="col-xs-4">
           <button class="btn btn-block btn-info">Info</button>
@@ -89,6 +90,8 @@
     <!--Ditch Custom CSS for Bootstrap 10-->
     <!--Use Spans for Inline Elements 11-->
     <!--Create a Custom Heading 12-->
+    <!--Add Font Awesome Icons to our Buttons 13-->
+    <!--Add Font Awesome Icons to ALL of our Buttons 14-->
 
 
   </body>
