@@ -90,6 +90,7 @@
     <!--Create a Custom Heading 12-->
     <!--Add Font Awesome Icons to our Buttons 13-->
     <!--Add Font Awesome Icons to ALL of our Buttons 14-->
+    <!--Use Spans for Inline Elements 15-->
 
   </body>
 </html>
