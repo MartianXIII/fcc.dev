@@ -110,6 +110,7 @@
     <!--Use Spans for Inline Elements 15-->
     <!--Responsively Style Radio Buttons 16-->
     <!--Responsively Style Checkboxes 17-->
+    <!--Style Text Inputs as Form Controls 18-->
 
   </body>
 </html>
