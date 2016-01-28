@@ -37,6 +37,7 @@
       <!--Create a Bootstrap Row 03-->
       <!--Split your Bootstrap Row 04-->
       <!--Create Bootstrap wells 05-->
+      <!--Add Elements within your Bootstrap Wells 06-->
 
 
       <!--Learn how Script tags && Document Ready Work  -->
