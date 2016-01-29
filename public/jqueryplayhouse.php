@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Jquery PlayGround</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
   </head>
   <body>
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Only change code above this line. -->
     <script>
       $(document).ready(function() {
@@ -15,7 +18,7 @@
 
     <div class="container-fluid">
       <h3 class="text-primary text-center">jQuery Playground</h3>
-      <div class="row">
+      <div class="col-xs-6">
           <h4>#left-well</h4>
           <div class="well" id="left-well">
             <button class="btn btn-default target" id="target1">#target1</button>
@@ -55,6 +58,7 @@
       <!--JQuery Playhouse -->
       <!--Learn how Script tags && Document Ready Work 14-->
       <!--Target HTML Elements with Selectors Using JQuery 15-->
+
 
   </body>
 </html>
