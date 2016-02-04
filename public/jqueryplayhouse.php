@@ -58,6 +58,7 @@
       <!--JQuery Playhouse -->
       <!--Learn how Script tags && Document Ready Work 14-->
       <!--Target HTML Elements with Selectors Using JQuery 15-->
+      <!--Target Elements by Class Using JQuery 16-->
 
 
 
