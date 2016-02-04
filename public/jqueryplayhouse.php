@@ -14,6 +14,7 @@
       $(document).ready(function() {
         $("button").addClass("animated bounce");
         $(".well").addClass("animated shake");
+        $("#target3").addClass("animated fadeOut");
       });
     </script>
 
@@ -61,8 +62,7 @@
       <!--Target HTML Elements with Selectors Using JQuery 15-->
       <!--Target Elements by Class Using JQuery 16-->
       <!--Target Elements by ID Using JQuery 17-->
-
-
+      <!-- 18-->
 
   </body>
 </html>
