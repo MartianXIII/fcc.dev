@@ -12,9 +12,11 @@
     <!-- Only change code above this line. -->
     <script>
       $(document).ready(function() {
-        $("button").addClass("animated bounce");
-        $(".well").addClass("animated shake");
-        $("#target3").addClass("animated fadeOut");
+        // $("button").addClass("animated bounce");
+        // $(".well").addClass("animated shake");
+        // $("#target3").addClass("animated fadeOut");
+
+
       });
     </script>
 
@@ -64,6 +66,7 @@
       <!--Target Elements by ID Using JQuery 17-->
       <!--Delete your JQuery Functions 18-->
       <!-- 19-->
+
 
 
   </body>
