@@ -65,9 +65,7 @@
       <!--Target Elements by Class Using JQuery 16-->
       <!--Target Elements by ID Using JQuery 17-->
       <!--Delete your JQuery Functions 18-->
-      <!-- 19-->
-
-
+      <!--Target the same element with multiple JQuery Selectors 19-->
 
   </body>
 </html>
