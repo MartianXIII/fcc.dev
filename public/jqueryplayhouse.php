@@ -15,10 +15,11 @@
         // $("button").addClass("animated bounce");
         // $(".well").addClass("animated shake");
         // $("#target3").addClass("animated fadeOut");
-        $('button').addClass("animated");
-        $('.btn').addClass("shake");
-        $('#target1').addClass("btn-primary");
-        $('button').removeClass("btn-default");
+        // $('button').addClass("animated");
+        // $('.btn').addClass("shake");
+        // $('#target1').addClass("btn-primary");
+        // $('button').removeClass("btn-default");
+        $('#target1').css("color", "red");
 
       });
     </script>
@@ -74,7 +75,7 @@
       <!--Change the CSS of an Element Using Query 21-->
 
 
-      
+
 
   </body>
 </html>
