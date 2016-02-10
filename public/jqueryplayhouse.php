@@ -80,8 +80,5 @@
       <!--Remoeve an Element Using JQuery 24-->
       
 
-
-
-
   </body>
 </html>
