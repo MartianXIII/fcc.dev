@@ -21,6 +21,7 @@
         // $('button').removeClass("btn-default");
         $('#target1').css("color", "red");
         $('#target1').prop("disabled", "true");
+        $('#target4').html("<i>#target4</i>");
 
       });
     </script>
@@ -75,6 +76,9 @@
       <!--Remove Classes from an element with JQuery 20-->
       <!--Change the CSS of an Element Using Query 21-->
       <!--Disable an Element Using JQuery 22-->
+      <!--Change Text Inside an Element Using Jquery 23-->
+      <!--Remoeve an Element Using JQuery 24-->
+      
 
 
 
