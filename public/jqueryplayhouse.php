@@ -82,7 +82,7 @@
       <!--Remove an Element Using JQuery 24-->
       <!--Use appendTo to Move Elements with JQuery 25-->
       <!--Clone an Element Using JQuery 26-->
-      
+      <!--Target the Parent of an Element Using JQuery 27-->
 
   </body>
 </html>
