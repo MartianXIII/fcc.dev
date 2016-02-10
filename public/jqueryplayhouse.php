@@ -15,7 +15,9 @@
         // $("button").addClass("animated bounce");
         // $(".well").addClass("animated shake");
         // $("#target3").addClass("animated fadeOut");
-
+        $('button').addClass("animated");
+        $('.btn').addClass("shake");
+        $('#target1').addClass("btn-primary");
 
       });
     </script>
@@ -67,10 +69,6 @@
       <!--Target Elements by ID Using JQuery 17-->
       <!--Delete your JQuery Functions 18-->
       <!--Target the same element with multiple JQuery Selectors 19-->
-
-
-
-      
 
   </body>
 </html>
