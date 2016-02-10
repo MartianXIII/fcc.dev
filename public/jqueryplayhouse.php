@@ -26,6 +26,7 @@
         $('#target2').appendTo("#right-well");
         $('#target5').clone("").appendTo("#left-well");
         $('#target1').parent().css("background-color", "red");
+        $('#right-well').children().css("color", "orange");
 
       });
     </script>
@@ -84,6 +85,7 @@
       <!--Use appendTo to Move Elements with JQuery 25-->
       <!--Clone an Element Using JQuery 26-->
       <!--Target the Parent of an Element Using JQuery 27-->
-
+      <!--Target the Children of an Element Using JQuery 28-->
+      <!--Target a Specific Child of an Element Using JQuery 29-->
   </body>
 </html>
