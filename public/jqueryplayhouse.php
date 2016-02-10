@@ -90,6 +90,7 @@
       <!--Target the Children of an Element Using JQuery 28-->
       <!--Target a Specific Child of an Element Using JQuery 29-->
       <!--Target Even Numbered Elements Using JQuery 30-->
+      <!--Use JQuery to Modify the Entire Page 31-->
 
   </body>
 </html>
