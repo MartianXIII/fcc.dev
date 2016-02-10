@@ -28,6 +28,7 @@
         $('#target1').parent().css("background-color", "red");
         $('#right-well').children().css("color", "orange");
         $('.target:nth-child(2)').addClass("animated bounce");
+        $('.target:even').addClass("animated shake");
 
       });
     </script>
@@ -89,6 +90,6 @@
       <!--Target the Children of an Element Using JQuery 28-->
       <!--Target a Specific Child of an Element Using JQuery 29-->
       <!--Target Even Numbered Elements Using JQuery 30-->
-      
+
   </body>
 </html>
