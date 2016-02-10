@@ -88,5 +88,7 @@
       <!--Target the Parent of an Element Using JQuery 27-->
       <!--Target the Children of an Element Using JQuery 28-->
       <!--Target a Specific Child of an Element Using JQuery 29-->
+      <!--Target Even Numbered Elements Using JQuery 30-->
+      
   </body>
 </html>
