@@ -882,6 +882,24 @@
 
     phoneticLookup("charlie");
 
+    // 88
+    var myObj = {
+      gift: "pony",
+      pet: "kitten",
+      bed: "sleigh"
+    };
+
+
+    function checkObj(checkProp) {
+          if(myObj.hasOwnProperty(checkProp)) {
+            return myObj[checkProp];
+          } else if (myObj.hasOwnProperty(checkProp)) {
+            return myObj[checkProp];
+          } else {
+            return "Not Found";
+          }
+        }
+
 
   </script>
 
@@ -974,6 +992,7 @@
   <!--Delete Properties from a Javascript Object 86-->
   <!--Using Objects for Lookups 87-->
   <!--Testing Objects for Properties 88-->
+  <!-- 89-->
 
 </body>
 
