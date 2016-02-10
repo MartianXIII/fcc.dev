@@ -23,6 +23,7 @@
         $('#target1').prop("disabled", "true");
         $('#target4').html("<i>#target4</i>");
         $('#target4').remove();
+        $('#target2').appendTo("#right-well");
 
       });
     </script>
@@ -79,6 +80,8 @@
       <!--Disable an Element Using JQuery 22-->
       <!--Change Text Inside an Element Using Jquery 23-->
       <!--Remove an Element Using JQuery 24-->
+      <!--Use appendTo to Move Elements with JQuery 25-->
+      <!-- 26-->
 
 
   </body>
