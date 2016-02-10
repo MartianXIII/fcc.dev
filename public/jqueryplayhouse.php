@@ -18,6 +18,7 @@
         $('button').addClass("animated");
         $('.btn').addClass("shake");
         $('#target1').addClass("btn-primary");
+        $('button').removeClass("btn-default");
 
       });
     </script>
@@ -69,6 +70,7 @@
       <!--Target Elements by ID Using JQuery 17-->
       <!--Delete your JQuery Functions 18-->
       <!--Target the same element with multiple JQuery Selectors 19-->
+      <!--Remove Classes from an element with JQuery 20-->
 
   </body>
 </html>
