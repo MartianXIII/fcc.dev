@@ -24,6 +24,7 @@
         $('#target4').html("<i>#target4</i>");
         $('#target4').remove();
         $('#target2').appendTo("#right-well");
+        $('#target5').clone("").appendTo("#left-well");
 
       });
     </script>
@@ -49,7 +50,6 @@
       </div>
       </div>
     </div>
-
 
       <!--JQuery Playhouse BootStrap-->
 
@@ -82,7 +82,7 @@
       <!--Remove an Element Using JQuery 24-->
       <!--Use appendTo to Move Elements with JQuery 25-->
       <!--Clone an Element Using JQuery 26-->
-
+      
 
   </body>
 </html>
