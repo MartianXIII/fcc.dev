@@ -20,6 +20,7 @@
         // $('#target1').addClass("btn-primary");
         // $('button').removeClass("btn-default");
         $('#target1').css("color", "red");
+        $('#target1').prop("disabled", "true");
 
       });
     </script>
@@ -73,6 +74,7 @@
       <!--Target the same element with multiple JQuery Selectors 19-->
       <!--Remove Classes from an element with JQuery 20-->
       <!--Change the CSS of an Element Using Query 21-->
+      <!--Disable an Element Using JQuery 22-->
 
 
 
