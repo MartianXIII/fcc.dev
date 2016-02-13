@@ -19,10 +19,15 @@
   </head>
   <body>
 
-    <canvas id="canvas" width="480" height="320"></canvas>
+    <canvas id="canvas" width="720" height="480"></canvas>
 
     <script type="text/javascript">
-      //JS goes here.
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.rect(20, 40, 50, 50);
+      ctx.fillStyle = "#FF0000";
+      ctx.fill();
     </script>
 
 
@@ -30,6 +35,6 @@
     <!--Our Body contains Canvas and Script Element Nodes  -->
     <!--Canvas will House the  render -  JS will house the script -->
 
-    
+
   </body>
 </html>
