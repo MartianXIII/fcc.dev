@@ -2,21 +2,26 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
+
   <title>This Game</title>
+
   <style media="screen">
     * {
       padding: 0;
       margin: 0;
     }
 
-    canvas {
+    #canvas {
       top: 2%;
-      background: #EEE;
       display: block;
       margin: 0 auto;
+      width: 720px;
+      height: 480px;
     }
   </style>
+
 </head>
 
 <body>
@@ -40,7 +45,7 @@
     // We need a Paddle for smackin
     var paddleHeight = 10;
     var paddleWidth = 75;
-    var paddleX = (canvas.width-paddleWidth)/2;
+    var paddleX = (canvas.width - paddleWidth) / 2;
 
     //Controlls for Paddling
     var rightPressed = false;
@@ -48,12 +53,43 @@
 
     // We need Bricks bud.
     var brickRowCount = 5;
-    var brickColumnCount = 7;
+    var brickColumnCount = 8;
     var brickWidth = 75;
     var brickHeight = 20;
     var brickPadding = 10;
     var brickOffsetTop = 30;
     var brickOffsetLeft = 30;
+
+    // brick Array
+    var bricks = [];
+    for (c = 0; c < brickColumnCount; c++) {
+      bricks[c] = [];
+      for (r = 0; r < brickRowCount; r++) {
+        bricks[c][r] = {
+          x: 0,
+          y: 0,
+          status: 1
+        };
+      }
+    }
+
+    function drawBricks() {
+      for (c = 0; c < brickColumnCount; c++) {
+        for (r = 0; r < brickRowCount; r++) {
+          if(bricks[c][r].status == 1) {
+          var brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
+          var brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
+          bricks[c][r].x = brickX;
+          bricks[c][r].y = brickY;
+          ctx.beginPath();
+          ctx.rect(brickX, brickY, brickWidth, brickHeight);
+          ctx.fillStyle = randomHexColor();
+          ctx.fill();
+          ctx.closePath();
+         }
+        }
+      }
+    }
 
 
     function drawBall() {
@@ -65,11 +101,11 @@
     }
 
     function drawPaddle() {
-        ctx.beginPath();
-        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-        ctx.fillStyle = randomHexColor();
-        ctx.fill();
-        ctx.closePath();
+      ctx.beginPath();
+      ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+      ctx.fillStyle = randomHexColor();
+      ctx.fill();
+      ctx.closePath();
     }
 
 
@@ -77,6 +113,8 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       drawBall();
       drawPaddle();
+      drawBricks();
+      collisionDetection();
       x += dx;
       y += dy;
 
@@ -86,20 +124,34 @@
       }
       if (y + dy < ballRadius) {
         dy = -dy;
-      } else if (y + dy > canvas.height-ballRadius) {
-          if(x > paddleX && x < paddleX + paddleWidth) {
-            dy = -dy;
-          } else {
-              alert("I heard you like GameOvers Dawg.");
-              document.location.reload();
-            }
-          }
+      } else if (y + dy > canvas.height - ballRadius) {
+        if (x > paddleX && x < paddleX + paddleWidth) {
+          dy = -dy;
+        } else {
+          alert("I heard you like GameOvers Dawg.");
+          document.location.reload();
+        }
+      }
 
       // Paddle movement and Boundaries
-      if (rightPressed && paddleX < canvas.width-paddleWidth) {
+      if (rightPressed && paddleX < canvas.width - paddleWidth) {
         paddleX += 7;
       } else if (leftPressed && paddleX > 0) {
-          paddleX -= 7;
+        paddleX -= 7;
+      }
+    }
+
+    function collisionDetection() {
+      for(c = 0; c < brickColumnCount; c++) {
+        for(r = 0; r < brickRowCount; r++) {
+          var b = bricks[c][r];
+          if(b.status == 1) {
+            if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+            dy = -dy;
+            b.status = 0;
+            }
+          }
+        }
       }
     }
 
@@ -107,7 +159,7 @@
     document.addEventListener("keyup", keyUpHandler, false);
 
     function keyDownHandler(e) {
-      if(e.keyCode == 39) {
+      if (e.keyCode == 39) {
         rightPressed = true;
       } else if (e.keyCode == 37) {
         leftPressed = true;
@@ -115,7 +167,7 @@
     }
 
     function keyUpHandler(e) {
-      if(e.keyCode == 39) {
+      if (e.keyCode == 39) {
         rightPressed = false;
       } else if (e.keyCode == 37) {
         leftPressed = false;
@@ -187,7 +239,6 @@
       var cString = hexColor.join(""); //this argument for join method ensures there will be no separation with a comma
       return cString;
     }
-
   </script>
 
 
@@ -203,7 +254,8 @@
   <!--Random Hex Color Function  -->
   <!--Adding Paddle  -->
   <!--Adding Move / Collision for paddle  -->
-  <!--Adding Bricks son  -->
+  <!--Adding Bricks son positioning and population  -->
+  <!--Add Brick Collision detection && return  -->
 
 
 </body>
