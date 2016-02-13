@@ -11,6 +11,7 @@
     }
 
     canvas {
+      top: 2%;
       background: #EEE;
       display: block;
       margin: 0 auto;
@@ -23,24 +24,85 @@
   <canvas id="canvas" width="720" height="480"></canvas>
 
   <script type="text/javascript">
+    // Game Map
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var x = canvas.width/2;
-    var y = canvas.height-30;
-    var dx = 0.5;
-    var dy = -0.5;
 
-    function draw() {
+    // zee Ball Captain
+    var ballRadius = 10;
+
+    // Movement of zee Ball Capitan
+    var x = canvas.width / 2;
+    var y = canvas.height - 30;
+    var dx = 2;
+    var dy = -2;
+
+    // We need a Paddle for smackin
+    var paddleHeight = 10;
+    var paddleWidth = 75;
+    var paddleX = (canvas.width-paddleWidth)/2;
+
+    //Controlls for Paddling
+    var rightPressed = false;
+    var leftPressed = false;
+
+
+    function drawBall() {
       ctx.beginPath();
-      ctx.arc(x, y, 10, 0, Math.PI*2);
-      ctx.fillStyle = "#0095DD";
+      ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+      ctx.fillStyle = randomHexColor();
       ctx.fill();
       ctx.closePath();
+    }
+
+    function drawPaddle() {
+        ctx.beginPath();
+        ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+        ctx.fillStyle = randomHexColor();
+        ctx.fill();
+        ctx.closePath();
+    }
+
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawBall();
+      drawPaddle();
       x += dx;
       y += dy;
-
+      if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+        dy = -dy;
+      }
+      if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+      }
+      if (rightPressed && paddleX < canvas.width-paddleWidth) {
+        paddleX += 7;
+      } else if (leftPressed && paddleX > 0) {
+        paddleX -= 7;
+      }
     }
-    setInterval(draw, 10)
+
+    document.addEventListener("keydown", keyDownHandler, false);
+    document.addEventListener("keyup", keyUpHandler, false);
+
+    function keyDownHandler(e) {
+      if(e.keyCode == 39) {
+        rightPressed = true;
+      } else if (e.keyCode == 37) {
+        leftPressed = true;
+      }
+    }
+
+    function keyUpHandler(e) {
+      if(e.keyCode == 39) {
+        rightPressed = false;
+      } else if (e.keyCode == 37) {
+        leftPressed = false;
+      }
+    }
+
+    setInterval(draw, 10);
 
     var rectangle = function() {
       ctx.beginPath(); //opening Method
@@ -68,6 +130,44 @@
       ctx.closePath();
       console.log(rectangle2);
     }
+
+    function randomHexColor() {
+      var hexColor = []; //new Array()
+      hexColor[0] = "#"; //first value of array needs to be hash tag for hex color val, could also prepend this later
+
+      for (i = 1; i < 7; i++) {
+        var x = Math.floor((Math.random() * 16)); //Tricky: Hex has 16 numbers, but 0 is one of them
+
+        if (x >= 10 && x <= 15) //hex:0123456789ABCDEF, this takes care of last 6
+        {
+          switch (x) {
+            case 10:
+              x = "a"
+              break;
+            case 11:
+              x = "b"
+              break;
+            case 12:
+              x = "c"
+              break;
+            case 13:
+              x = "d"
+              break;
+            case 14:
+              x = "e"
+              break;
+            case 15:
+              x = "f"
+              break;
+          }
+        }
+        hexColor[i] = x;
+        // console.log(hexColor);
+      }
+      var cString = hexColor.join(""); //this argument for join method ensures there will be no separation with a comma
+      return cString;
+    }
+
   </script>
 
 
@@ -76,7 +176,12 @@
   <!--Canvas will House the  render -  JS will house the script -->
   <!--defined vars canvas and ctx  -->
   <!--ctx Begin/End house context of our Rectangle  -->
-  <!--ctx  -->
+  <!--ctxFill and Style for tangibility  -->
+  <!--Created Ball  -->
+  <!--Set ANimation on Ball  -->
+  <!--Set Map Boundaries for Ball  -->
+  <!--Random Hex Color Function  -->
+  <!--  -->
 
 
 </body>
