@@ -74,11 +74,18 @@
     }
 
     var score = 0;
+    var lives = 3;
+
+    function drawLives() {
+      ctx.font = "19px universe";
+      ctx.fillStyle = randomHexColor();
+      ctx.fillText("Lives: ", +lives, canvas.width -65, 20);
+    }
 
     function drawScore() {
       ctx.font = "19px universe";
       ctx.fillStyle = randomHexColor();
-      ctx.fillText("Score: " +score, 8,20);
+      ctx.fillText("Score: " +score, 280,20);
     }
 
     function drawBricks() {
@@ -124,6 +131,7 @@
       drawBricks();
       collisionDetection();
       drawScore();
+      drawLives();
       x += dx;
       y += dy;
 
@@ -136,9 +144,17 @@
       } else if (y + dy > canvas.height - ballRadius) {
         if (x > paddleX && x < paddleX + paddleWidth) {
           dy = -dy;
-        } else {
+          lives--;
+        }
+        if(!lives) {
           alert("I heard you like GameOvers Dawg.");
           document.location.reload();
+        } else {
+            x = canvas.width/2;
+            y = canvas.height-30;
+            dx = 2;
+            dy = -2;
+            paddleX = (canvas.width-paddleWidth)/2;
         }
       }
 
@@ -148,6 +164,7 @@
       } else if (leftPressed && paddleX > 0) {
         paddleX -= 7;
       }
+      requestAnimationFrame(draw);
     }
 
     function collisionDetection() {
@@ -171,6 +188,14 @@
 
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
+    document.addEventListener("mousemove", mouseMoveHandler, false);
+
+    function mouseMoveHandler(e) {
+      var relativeX = e.clientX - canvas.offsetLeft;
+      if(relativeX > 0 && relativeX < canvas.width) {
+        paddleX = relativeX - paddleWidth/2;
+      }
+    }
 
     function keyDownHandler(e) {
       if (e.keyCode == 39) {
@@ -188,7 +213,8 @@
       }
     }
 
-    setInterval(draw, 10);
+    draw();
+    // setInterval(draw, 10);
 
     var rectangle = function() {
       ctx.beginPath(); //opening Method
@@ -271,6 +297,9 @@
   <!--Adding Bricks son positioning and population  -->
   <!--Add Brick Collision detection && return  -->
   <!--The Score!!  -->
+  <!--How about Mouse Control  -->
+  <!--Neeeeeds Lives.  -->
+  <!--Added requestAnimationFrame to defn draw(); -->
 
 </body>
 
