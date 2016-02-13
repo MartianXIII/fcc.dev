@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>This Game</title>
-    <style media="screen">
-      * {
-        padding: 0;
-        margin: 0;
-      }
 
-      canvas {
-        background: #EEE;
-        display: block;
-        margin: 0 auto;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>This Game</title>
+  <style media="screen">
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-    </style>
-  </head>
-  <body>
+    canvas {
+      background: #EEE;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
 
-    <canvas id="canvas" width="720" height="480"></canvas>
+<body>
 
-    <script type="text/javascript">
-      var canvas = document.getElementById("canvas");
-      var ctx = canvas.getContext("2d");
+  <canvas id="canvas" width="720" height="480"></canvas>
 
-      var rectangle = function() {
-      ctx.beginPath();//opening Method
+  <script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var x = canvas.width/2;
+    var y = canvas.height-30;
+    var dx = 0.5;
+    var dy = -0.5;
+
+    function draw() {
+      ctx.beginPath();
+      ctx.arc(x, y, 10, 0, Math.PI*2);
+      ctx.fillStyle = "#0095DD";
+      ctx.fill();
+      ctx.closePath();
+      x += dx;
+      y += dy;
+
+    }
+    setInterval(draw, 10)
+
+    var rectangle = function() {
+      ctx.beginPath(); //opening Method
       ctx.rect(20, 40, 50, 50);
       ctx.fillStyle = "#FF0000";
       ctx.fill();
-      ctx.closePath();//closing Method
+      ctx.closePath(); //closing Method
       console.log(rectangle);
-      }
+    }
 
-      function circle() {
-        ctx.beginPath();
-        ctx.arc(240, 160, 20, 0, Math.PI*2, false);//arc Method 6 parameters
-        ctx.fillStyle = "green";
-        ctx.fill();
-        ctx.closePath();
-        console.log(circle);
-      }
+    var circle = function() {
+      ctx.beginPath();
+      ctx.arc(240, 160, 20, 0, Math.PI * 2, false); //arc Method 6 parameters
+      ctx.fillStyle = "green";
+      ctx.fill();
+      ctx.closePath();
+      console.log(circle);
+    }
 
-      function rectangle2() {
+    var rectangle2 = function() {
       ctx.beginPath();
       ctx.rect(100, 10, 100, 40);
       ctx.strokeStyle = "rgba(30, 30, 155, 1.5)";
       ctx.stroke();
       ctx.closePath();
       console.log(rectangle2);
-      }
+    }
+  </script>
 
 
-
-    </script>
-
-
-    <!--Character set is Defined UTF - Title - Minor Page CSS  -->
-    <!--Our Body contains Canvas and Script Element Nodes  -->
-    <!--Canvas will House the  render -  JS will house the script -->
-    <!--defined vars canvas and ctx  -->
-    <!--ctx Begin/End house context of our Rectangle  -->
-    <!--ctx  -->
+  <!--Character set is Defined UTF - Title - Minor Page CSS  -->
+  <!--Our Body contains Canvas and Script Element Nodes  -->
+  <!--Canvas will House the  render -  JS will house the script -->
+  <!--defined vars canvas and ctx  -->
+  <!--ctx Begin/End house context of our Rectangle  -->
+  <!--ctx  -->
 
 
-  </body>
+</body>
+
 </html>
