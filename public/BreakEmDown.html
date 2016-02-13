@@ -39,8 +39,8 @@
     // Movement of zee Ball Capitan
     var x = canvas.width / 2;
     var y = canvas.height - 30;
-    var dx = 2;
-    var dy = -2;
+    var dx = 4;
+    var dy = -4;
 
     // We need a Paddle for smackin
     var paddleHeight = 10;
@@ -79,7 +79,7 @@
     function drawLives() {
       ctx.font = "19px universe";
       ctx.fillStyle = randomHexColor();
-      ctx.fillText("Lives: ", +lives, canvas.width -65, 20);
+      ctx.fillText("Lives: " +lives, canvas.width -305, 20);
     }
 
     function drawScore() {
@@ -126,14 +126,12 @@
 
     function draw() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawBricks();
       drawBall();
       drawPaddle();
-      drawBricks();
-      collisionDetection();
       drawScore();
       drawLives();
-      x += dx;
-      y += dy;
+      collisionDetection();
 
       // Ball movement and Boundaries
       if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
@@ -144,18 +142,19 @@
       } else if (y + dy > canvas.height - ballRadius) {
         if (x > paddleX && x < paddleX + paddleWidth) {
           dy = -dy;
+        } else {
           lives--;
-        }
         if(!lives) {
           alert("I heard you like GameOvers Dawg.");
           document.location.reload();
         } else {
             x = canvas.width/2;
             y = canvas.height-30;
-            dx = 2;
-            dy = -2;
+            dx;
+            dy;
             paddleX = (canvas.width-paddleWidth)/2;
         }
+           }
       }
 
       // Paddle movement and Boundaries
@@ -164,6 +163,9 @@
       } else if (leftPressed && paddleX > 0) {
         paddleX -= 7;
       }
+
+      x += dx;
+      y += dy;
       requestAnimationFrame(draw);
     }
 
@@ -243,6 +245,7 @@
       console.log(rectangle2);
     }
 
+    // First random color generator for conceptualizing its logic
     function randomHexColor() {
       var hexColor = []; //new Array()
       hexColor[0] = "#"; //first value of array needs to be hash tag for hex color val, could also prepend this later
@@ -279,6 +282,18 @@
       var cString = hexColor.join(""); //this argument for join method ensures there will be no separation with a comma
       return cString;
     }
+
+    // shorter Random Color further abstracted
+      function getRandomColor() {
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for(var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        console.log(color);
+      }
+      getRandomColor();
   </script>
 
 
@@ -300,6 +315,8 @@
   <!--How about Mouse Control  -->
   <!--Neeeeeds Lives.  -->
   <!--Added requestAnimationFrame to defn draw(); -->
+  <!--Extra Color Randomizer  -->
+  <!--Removed a dx dy double defined  -->
 
 </body>
 
