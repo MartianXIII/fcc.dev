@@ -21,6 +21,50 @@
     <script type="text/javascript">
       // Das JS here Kap'n
 
+      // Defining an Object to keep images - 'singleton'
+      var imageStack = function() {
+        // define images
+        this.background = Image();
+        // setting source
+        this.background.src = "";
+      }
+
+      // Create Drawable object - base class for all drawn objects
+      function drawable() {
+        this.init = function(x, y) {
+          // Some Defaults variables
+          this.x = x;
+          this.y = y;
+        }
+        this.speed = 0;
+        this.canvasWidth = 0;
+        this.canvasHeight = 0;
+
+        // Defining abstract function to implement child objects
+        this.draw = function () {
+        }
+      }
+
+      // Creating Background object - child of drawable obj
+      function background() {
+        this.speed = 1; //redefine speed for panning
+
+        // Implementing abstract function
+        this.draw = function() {
+          // panning
+          this.y += this.speed;
+          this.context.drawimage(imageStack.background, this.x, this.y);
+          // Draw another Image at the top edge of the first
+          this.context.drawImage(imageRepository.background, this.x, this.y - this.canvasHeight);
+
+          // if the image scrolls off - reset
+          if(this.y >= this.canvasHeight)
+            this.y = 0;
+        };
+      }
+
+      // set background to inherit properties from drawable
+      background.prototype = drawable();
 
     </script>
   </body>
