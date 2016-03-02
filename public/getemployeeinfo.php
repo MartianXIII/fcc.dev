@@ -1,5 +1,4 @@
 <?php
-
 // Connect to DB in Above Directory for security
 require_once('../mysql_connect.php');
 
@@ -42,4 +41,6 @@ echo '</table>';
   // error passing database error
   echo mysqli_error($dbc);
 }
+// Close database connection when completed
+mysqli_close($dbc);
 ?>
