@@ -20,4 +20,26 @@ if($response)
   <td><b>Gender<b></td>
   <td><b>Hire Date<b></td></tr>';
 
+
+// loop fetching data until all data is returned
+while($row = mysqli_fetch_array($response))
+{
+  echo '<tr><td>' .
+  $row['emp_no'] . '</td><td>' .
+  $row['birth_date'] . '</td><td>' .
+  $row['first_name'] . '</td><td>' .
+  $row['last_name'] . '</td><td>' .
+  $row['gender'] . '</td><td>' .
+  $row['hire_date'] . '</td>';
+
+  echo '</tr>';
+}
+
+echo '</table>';
+} else {
+  // Error log message
+  echo "Couldn't issue database query";
+  // error passing database error
+  echo mysqli_error($dbc);
+}
 ?>
