@@ -5,8 +5,9 @@ Course Topics
 01 - Introducting SQL Server 2012
    - SQL server types of statements other sql
 
-02 -
+02 - Advanced SELECT statements
+   - DISTINCT, Aliases, scalar functions and CASE, using JOIN & MERGE; Filtering and sorting data, NULL values
 
-03 -  
+03 -
 
 *\
