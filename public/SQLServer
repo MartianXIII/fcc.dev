@@ -8,6 +8,7 @@ Course Topics
 02 - Advanced SELECT statements
    - DISTINCT, Aliases, scalar functions and CASE, using JOIN & MERGE; Filtering and sorting data, NULL values
 
-03 -
+03 - SQL Server data types
+   - Introduce data types, data type usage, convering data types, understanding SQL server function types
 
 *\
