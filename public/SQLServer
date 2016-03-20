@@ -11,5 +11,7 @@ Course Topics
 03 - SQL Server data types
    - Introduce data types, data type usage, convering data types, understanding SQL server function types
 
-04 - 
+04 - Grouping and aggregating data
+   - Aggregate functions GROUP BY and HAVING clauses, subqueries, self-contained correlated, and EXISTS, Views, inline-table valued functions, and derived tables
+   
 *\
