@@ -14,13 +14,17 @@ Course Topics
 04 - Grouping and aggregating data
    - Aggregate functions GROUP BY and HAVING clauses, subqueries, self-contained correlated, and EXISTS, Views, inline-table valued functions, and derived tables
 
-05 -
+05 - SET operators, Windows functions, and grouping
+   - SET operators, Windows functions, GROUPING sets(PIVOT, UNPIVOT, CUBE, ROLLUP)
 
-06 -
+06 - Modifying Data
+   - INSERT, UPDATE, and DELETE statements, use of defaults, constraints, and triggers, OUTPUT
 
-07 -
+07 - Programming with T-SQL
+   - Using T-SQL
 
 08 -
 
-   
+
+
 *\
