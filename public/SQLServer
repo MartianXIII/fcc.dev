@@ -23,7 +23,8 @@ Course Topics
 07 - Programming with T-SQL
    - Using T-SQL programming elements, implementing error handling, understanding and implementing transactions
 
-08 -
+08 - Retrieving SQL Server metadata and improving Query performance
+   - Querying system catalogs and dynamic management views, creating and executing stored procedures, improving SQL Server query performance
 
 
 
