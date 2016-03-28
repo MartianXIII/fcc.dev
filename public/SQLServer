@@ -11,7 +11,9 @@ Course Topics
    - Data_Manipulation_Language + Data_Definition_Language + Data_Control_Language
    - DML {Statements for querying and modifying data}
    - SELECT, INSERT, UPDATE, DELETE
-
+   - DDL {Statements for object definitions}
+   - CREATE, ALTER, DROP
+   -
 02 - Advanced SELECT statements
    - DISTINCT, Aliases, scalar functions and CASE, using JOIN & MERGE; Filtering and sorting data, NULL values
 
