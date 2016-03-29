@@ -13,7 +13,9 @@ Course Topics
    - SELECT, INSERT, UPDATE, DELETE
    - DDL {Statements for object definitions}
    - CREATE, ALTER, DROP
-   -
+   - DCL {Statements for security permissions}
+   - GRANT, REVOKE, DENY
+   
 02 - Advanced SELECT statements
    - DISTINCT, Aliases, scalar functions and CASE, using JOIN & MERGE; Filtering and sorting data, NULL values
 
